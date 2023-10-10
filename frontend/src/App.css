@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+  
+}
+body{
+  background-color:#333; 
+  overflow: hidden; 
+}
+
+
+/* Header style  */
+header {
+  /* background-color: ; */
+  color: #fff;
+  padding: 10px 0;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+span{
+  color: #ffa500;
+}
+.logo {
+ 
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+.app-container {
+  
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 2% 1%;
+  
+}
+
+.app-content {
+  display: block;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #333;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  padding: 1%;
+  
+ 
+}
+
+.lastbook{
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  background-color:#d6a967;
+  padding: 0%;
+  margin-left: 25%;
+  position: absolute;
+}
+
+.heading h2{
+  color: #333;
+}
+
+
+.content-container {
+  width: 100%;
+  border: 2px solid black;
+  min-height: 90px;
+  margin: 10px 0;
+  border-radius: 10px;
+  margin-right: 1%;
+  background-color:#d6a967;
+  font-size: 20px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, #ffffff 0px 30px 60px -30px, white(16, 124, 240, 0.35) 0px -2px 6px 0px inset; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+}
+
+.label {
+  padding: 10px;
+  font-size: 22px;
+}
+
+.content-slots {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  min-height: 50px;
+}
+
+.slot-container {
+  min-width: 80px;
+  min-height: 25px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 15px 10px;
+}
+
+
+.seat-slot {
+  width: 60px;
+  flex-wrap: wrap;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.seat-slot input {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.booking-container {
+  width: 100%;
+  /* height: 100%; */
+  border: .4rem solid #333;
+  border-radius: 1.5px;
+  padding: 10px;
+  
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.submit-btn button {
+  display: inline-block;
+    margin-top:1rem;
+    margin: 20px 20px;
+    margin-left: 44%;
+    background:#ffa500;
+    color:#fff;
+    padding:.8rem 3rem;
+    border: .2rem solid #ffa500;
+    cursor:pointer;
+    font-size: .8rem;
+    border-radius: 10px
+}
+
+.submit-btn button:hover {
+  background: rgba(255,165,0,.2);
+  color:#ffa500;
+}
+
+
+/* Footer.css */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.footer span {
+  color: red; /* Change the color of the heart emoji as desired */
+  font-size: 12px; /* Adjust the font size as desired */
+}
+
+
+/*responsive css */
+/* For mobile phones: */
+@media only screen and (max-width: 600px){
+  .app-content{display: block}
+}
+@media (max-width: 768px) {
+  .lastbook{
+    margin-left: 330px;
+    width: 200px;
+    height: 150px;
+  }
+  .footer {
+    /* position: static;  */
+    display: flex;
+  }
+}
